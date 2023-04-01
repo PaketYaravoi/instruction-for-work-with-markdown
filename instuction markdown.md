@@ -231,3 +231,70 @@ __*Важно!!!*__
 <!--- Here's my comment --->
 >[!WARNING]
 >Не включайте конфиденциальные или конфиденциальные сведения в комментарии HTML. В документации комментарии HTML размещаются в опубликованном HTML-коде, который становится общедоступным. Хотя комментарии HTML невидимы для читателя, они отображаются в самом HTML-коде.
+
+# Действие "Дальнейшие действия"
+
+Пользовательское расширение можно использовать для добавления кнопки "Дальнейшие действия" на страницы сайта Документации.
+
+Синтаксис выглядит следующим образом:
+
+> [!div class="nextstepaction"]
+> [button text](link to topic)
+
+Например:
+
+> [!div class="nextstepaction"]
+> [Learn about adding code to articles](code-in-docs.md)
+
+Вы можете использовать любые поддерживаемые ссылки в действии "Дальнейшие действия", включая ссылку Markdown на другую веб-страницу. Как правило, ссылка "Дальнейшие действия" — это относительная ссылка на другой файл в том же наборе документации.
+
+# Нелокализованные строки
+
+Вы можете использовать пользовательское расширение Markdown no-loc, чтобы указать строки содержимого, не подлежащие локализации.
+
+Для всех указанных строк учитывается регистр; то есть строка должна полностью соответствовать указанному значению, чтобы игнорироваться при локализации.
+
+Чтобы пометить отдельную строку как не подлежащую локализации, используйте следующий синтаксис:
+
+:::no-loc text="String":::
+
+Например, в следующем примере только один экземпляр Document будет игнорироваться в процессе локализации:
+
+(#) Heading 1 of the Document
+
+Markdown content within the :::no-loc text="Document":::.  The are multiple instances of Document, document, and documents.
+Далеее идет подробная инструкция 
+https://learn.microsoft.com/ru-ru/contribute/markdown-reference
+
+# Селекторы
+
+Селекторы — это элементы пользовательского интерфейса, позволяющие пользователю переключаться между несколькими разновидностями одной и той же статьи. Они используются в некоторых наборах документов для реализаций разных технологий или платформ. Селекторы обычно применяются к материалам о мобильных платформах для разработчиков.
+
+В каждой статье с возможностью выбора используется одна и та же разметка Markdown для селектора. Поэтому рекомендуется поместить селектор для статьи во включаемый файл. Затем нужно добавить ссылки на этот файл во все статьи, для которых используется селектор.
+
+Сейчас существует два типа селекторов: для единичного и множественного выбора.
+
+# Единичный выбор
+> [!div class="op_single_selector"]
+> - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
+> - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+> - [iOS](../articles/notification-hubs-ios-get-started/)
+> - [Android](../articles/notification-hubs-android-get-started/)
+> - [Kindle](../articles/notification-hubs-kindle-get-started/)
+> - [Baidu](../articles/notification-hubs-baidu-get-started/)
+> - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
+
+# Множественный выбор
+> [!div class="op_multi_selector" title1="Platform" title2="Backend"]
+> - [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+> - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+> - [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows universal C# | Javascript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows Phone | .NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+> - [(Windows Phone | Javascript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+> - [(Android | .NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+> - [(Android | Javascript)](./mobile-services-javascript-backend-android-get-started-push.md)
+> - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+> - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
+
