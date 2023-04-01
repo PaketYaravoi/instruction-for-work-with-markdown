@@ -298,3 +298,12 @@ https://learn.microsoft.com/ru-ru/contribute/markdown-reference
 > - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
 > - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 
+# Подстрочные и надстрочные символы
+
+Подстрочные и надстрочные символы следует использовать только при необходимости для технической точности, например при написании математических формул. Не используйте их для нестандартных стилей, например сносок.
+
+Для подстрочных и надстрочных символов используйте HTML:
+Hello <sub>This is subscript!</sub>
+
+Goodbye <sup>This is superscript!</sup>
+
