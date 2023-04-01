@@ -117,6 +117,25 @@ __*Важно!!!*__
 Встроенные включаемые файлы находятся в строке:
 смотреть на сайте https://learn.microsoft.com/ru-ru/contribute/markdown-reference
 
+# Indentation
+В Markdown пробелы перед первым символом строки определяют выравнивание строки относительно предшествующих строк. Отступы имеют особое значение в нумерованных и маркированных списках, так как позволяют отображать несколько уровней вложенности в иерархическом или структурированном формате.
+
+Чтобы задать отступ текста для выравнивания с предыдущим абзацем или элементом в нумерованном или маркированном списке, следует использовать пробелы.
+
+В следующих двух примерах показана отрисовка абзацев с отступами на основе их связи с другими абзацами.
+
+1. This is a numbered list example (one space after the period before the letter T).
+   This sentence is indented three spaces.
+   This code block is indented three spaces.
+   
+- This is a bulleted list example (one space after the bullet before the letter T).
+  This sentence is indented two spaces.
+  > [!TIP]
+  > This tip is indented two spaces.
+  - This is a second-level bullet (indented two spaces, with one space after the bullet before the letter T).
+    This sentence is indented four spaces.
+    > This quote block is indented four spaces.
+
 
 ## Ссылки:
 
