@@ -83,3 +83,7 @@ __*Важно!!!*__
 > [!TIP]
 > Чтобы избежать отображения смарт-кавычек в файлах Markdown, используйте функцию замены парных кавычек в Docs Authoring Pack. Дополнительные сведения см. в статье Замена смарт-кавычек.
 
+## Блок цитированаия
+Блоки цитирования создаются с помощью символа (>)
+
+> This is a blockquote. It is usually rendered indented and with a different background color.
